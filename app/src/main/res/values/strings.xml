@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hour20Application</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_delete">Delete All Photos</string>
+
+
+    <string name="title_activity_retrieve_photos">RetrievePhotosActivity</string>
+
+
+    <string-array name="choices_array">
+        <item>Retrieve Photo Data</item>
+        <item>Recent Photos</item>
+    </string-array>
+    <string name="title_activity_photo">PhotoActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>
