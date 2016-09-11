@@ -41,14 +41,7 @@ public class FlickrPhoto extends Object {
 	public FlickrPhoto() {
 	}
 
-//	public String PhotoUrl(Boolean big){
-//	    String opt = "n";
-//	    if (big)
-//	    	opt ="c";
-//		String photoUri =
-//		"http://farm"+this.farm + ".staticflickr.com/"+this.server+"/"+ this.id+"_"+this.secret +"_" + opt +".jpg";
-//		return photoUri;
-//	}
+
 
 
 	public static ArrayList<FlickrPhoto> makePhotoList (String photoData ) throws JSONException, NullPointerException {

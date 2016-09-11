@@ -21,7 +21,10 @@ public class PhotoService extends IntentService {
     public static final String ACTION_SUCCESS = "com.talkingandroid.hour20application.action.SUCCEED";
     public static final String ACTION_FAIL = "com.talkingandroid.hour20application.action.FAIL";
     public static final String EXTRA_MESSAGE = "com.talkingandroid.hour20application.extra.MESSAGE";
-    public final static String API_KEY ="---ADD YOUR KEY HERE---";
+//    public final static String API_KEY ="---ADD YOUR KEY HERE---";
+    public final static String API_KEY ="37ad78fdb433e497de195f7c452ad8af";
+
+
     public final static String NUM_PHOTOS ="12";
 
     public PhotoService() {
@@ -71,24 +74,6 @@ public class PhotoService extends IntentService {
                             e.printStackTrace();
                         }
                     }
-
-                    // Parse
-
-
-                    // Does DB exists  should in in app ... just use loader
-                    //- loader loads from ContentProvider
-                    //- When you refresh,
-                    // if yes, return DB exists
-                    // run
-                    // Get Latest Photos Button on app
-
-                    //OPEN DE
-                    //DELETE ALL
-                    //Load DB
-
-
-                    // Insert into DB
-                    // Delete all
 
 
                     Intent broadcastIntent = new Intent();

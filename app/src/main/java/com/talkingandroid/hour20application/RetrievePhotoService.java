@@ -44,24 +44,6 @@ public class RetrievePhotoService extends IntentService {
                         sb = sb.append(responseString);
                     }
                     String photoData = sb.toString();
-                    // Parse
-
-
-                    // Does DB exists  should in in app ... just use loader
-                    //- loader loads from ContentProvider
-                    //- When you refresh,
-                    // if yes, return DB exists
-                    // run
-                    // Get Latest Photos Button on app
-
-                    //OPEN DE
-                    //DELETE ALL
-                    //Load DB
-
-
-                    // Insert into DB
-                    // Delete all
-
 
                     Intent broadcastIntent = new Intent();
                     broadcastIntent.setAction(ACTION_RECEIVE);

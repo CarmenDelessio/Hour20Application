@@ -114,17 +114,9 @@ public class FlickrPhotoDbAdapter {
         return mDb.insert(PHOTO_TABLE, null, initialValues);
     }
 
-//    public boolean updatePhoto(String id, ContentValues updateValues) {
-//        return mDb.update(PHOTO_TABLE, updateValues, FLICKR_ID + "=" + id, null) > 0;
-//    }
-
     public int updatePhoto(String selection, String[] selectionArgs, ContentValues newValues) {
         return mDb.update(PHOTO_TABLE, newValues, selection, selectionArgs );
     }
-
-//    public boolean deletePhoto(String photo_id) {
-//        return mDb.delete(PHOTO_TABLE, FLICKR_ID + "=" + photo_id, null) > 0;
-//    }
 
 
     public int deletePhoto(String selection, String[] selectionArgs) {
@@ -147,43 +139,6 @@ public class FlickrPhotoDbAdapter {
         return mDb.query(PHOTO_TABLE, projection, selection,
                 selectionArgs, null, null, sortOrder);
     }
-
-
-
-//    public Cursor fetchById(long rowId) throws SQLException {
-//        Cursor mCursor =
-//                mDb.query(true, PHOTO_TABLE, FLICKR_PHOTO_FIELDS, KEY_ROWID + "=" + rowId, null,
-//                        null, null, null, null);
-//        if (mCursor != null) {
-//            mCursor.moveToFirst();
-//        }
-//        return mCursor;
-//
-//    }
-//
-//    public Cursor fetchByFlickrId(String flickrId) throws SQLException {
-//        Cursor mCursor =
-//                mDb.query(true, PHOTO_TABLE, FLICKR_PHOTO_FIELDS, FLICKR_ID + "='" + flickrId+"'", null,
-//                        null, null, null, null);
-//        if (mCursor != null) {
-//            mCursor.moveToFirst();
-//        }
-//        return mCursor;
-//    }
-//
-//
-//
-//    public FlickrPhoto getPhotoByFlickrId(String id){
-//        FlickrPhoto photo = null;
-//        Cursor photoCursor = fetchByFlickrId(id);
-//        if (photoCursor.moveToFirst()){
-//            photo= getPhotoFromCursor(photoCursor);
-//        }
-//        if (photoCursor!=null){
-//            photoCursor.close();
-//        }
-//        return photo;
-//    }
 
 
     public static FlickrPhoto getPhotoFromCursor(Cursor cursor){

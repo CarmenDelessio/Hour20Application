@@ -49,7 +49,6 @@ public class FlickrPhotoContentProvider extends ContentProvider {
         long id = mFlickrPhotoDbAdapter.insertPhoto(values);
         if (id > 0) {
             Uri newUri = ContentUris.withAppendedId(uri, id);
-//            getContext().getContentResolver().notifyChange(uri,null);
 
             return newUri;
         }
